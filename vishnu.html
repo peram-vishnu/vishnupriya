@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="yoga.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        function popUp(){
+            swal({
+             title: "Sorry!",
+            text: "You don't have an twitter account!",
+            icon: "warning",
+            button: "Ok!",
+                });
+        }
+    </script>
+    <script>
+        function popUP(){
+            swal({
+             title: "Sorry!",
+            text: "You don't have an youtube channel!",
+            icon: "warning",
+            button: "Ok!",
+                });
+        }
+    </script>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="unit">
+         <div class="heart">
+           <div class="heart-piece-0"></div>
+           <div class="heart-piece-1"></div>
+           <div class="heart-piece-2"></div>
+           <div class="heart-piece-3"></div>
+           <div class="heart-piece-4"></div>
+           <div class="heart-piece-5"></div>
+           <div class="heart-piece-6"></div>
+           <div class="heart-piece-7"></div>
+           <div class="heart-piece-8"></div>
+         </div>
+         <p>loading love</p>
+        </div>
+      </div>
+
+    <div class="a">
+    <video width="1000px" controls="controls"   poster="viss.jpg" preload="none">
+    <source src="tata.mp4" video="web/mp4">
+    </video>
+    </div>
+    <div class="b">
+    <video width="650px" style="vertical-align:right;margin:45px 700px" controls="controls" preload="none" poster="mmm.jpg" > 
+    <source src="last.priya.mp4" video="web/mp4"></video>
+    </div>
+    <div class="c">
+        <video width="650px" style="vertical-align: left;margin:40px 15px" controls="controls" preload="none" poster="img.jpg">
+            <source src="kyc.mp4" video="web/mp4">
+            </video>        
+    </div>
+
+
+    <div class="social-menu">
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100012159242000"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"onclick="popUp()"></i></a></li>
+            <li><a href="https://www.instagram.com/peram_vishnu "><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"onclick="popUP()"></i></a></li>
+            <li><a href="https://in.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+    </script>
+    <script>
+      $(window).on('load',function(){
+        $(".flex-container").fadeOut("slow");
+      });
+    </script>
+    
+    </body>
+</html>
