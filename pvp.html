@@ -7,9 +7,13 @@
 	<div id="loader">
 		<canvas id=c></canvas>
 		<a href="viss.html"  class="button btnSlide btnOrange">
-			<div class="top" data-content="Slide">Next</div>
+			<div class="top" data-content="Slide">LOAD MORE</div>
 			<div class="bottom" data-content="Slide">Click it</div>
+			
 		  </a>
+		  <div class="gif" style="position: fixed;    bottom: 50px;right: 150px;z-index: 0;" >
+			<img src="load.gif"   alt="This is my animated image" >
+		</div>
 
 		
 	</div>
@@ -41,7 +45,6 @@ a:visited {
 a.button {
   display:inline-block;
   position: relative;
-  float: left;
   width: 120px;
   padding: 0;
   margin: 10px 20px 10px 0;
@@ -53,40 +56,42 @@ a.button {
   transition: all 0.2s ;
 }
 
-
+.gif{
+	bottom: 50px;
+	right: 150px;
+	z-index: 0;
+}
 
 
 .btnSlide .top {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 120px;
+  position: fixed;
+  
+  bottom: 50px;
+  right: 10px;
+  width: 130px;
   height: 50px;
-  background: #00AE68;
   z-index: 10;
-  margin-left:270px;
   transition: all 0.2s ;
   border-radius: 100px;
-  margin-top: 500%;
+  text-align: center;
 }
+
 .btnSlide.btnOrange .top {
     background: indianred;
 }
 .btnSlide .bottom {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 120px;
+  bottom: 50px;
+  right: 10px;
+  width: 100px;
   height: 50px;
   color: darkgray;
   z-index: 5;
   border-radius: 100px;
-  margin-left:270px;
-  margin-top: 500%;
 }
 
 .btnSlide:hover .top {
-  top: 50px;
+  bottom: 40px;
 }
 
   

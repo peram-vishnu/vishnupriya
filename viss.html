@@ -1,98 +1,513 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styley.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-</head>
-<body>
-
-
-  <div class="flex-container">
-    <div class="unit">
-     <div class="heart">
-       <div class="heart-piece-0"></div>
-       <div class="heart-piece-1"></div>
-       <div class="heart-piece-2"></div>
-       <div class="heart-piece-3"></div>
-       <div class="heart-piece-4"></div>
-       <div class="heart-piece-5"></div>
-       <div class="heart-piece-6"></div>
-       <div class="heart-piece-7"></div>
-       <div class="heart-piece-8"></div>
-     </div>
-     <p>loading love</p>
-    </div>
-  </div>
-  <h1 class="type"></h1>
-  <script type="text/javascript" src="typed.js" ></script>
-  <script type="text/javascript" >
-  var typed = new Typed(".type", {
-  strings: [
-    "Now I want to say something special to you.",
-     "So , Please read everything...!",
-    "When I saw your pics for the first time.",
-    "Some special feeling that can't be Expressable...!",
-    "As the days passed.. You getting very closer to my Heart...! ",
-    "Everything about is always intresting for me...!",
-    "I hadn't said these words to anyone and I won't say to anyone in furture...",
-    "Because I don't want anyone else...!",
-    "I love my Parents so much than anything else in this world...!",
-    "Now You are the only PERSON whom I love equally with my parents...!",
-    "Every one says love is blind.",
-    "But...If love has eyes..It definetly fall for YOU...!",
-    "My heart is mine.",
-    "But whenever I argue with it about YOU...It always supports your side.",
-    "Loving is not important.",
-    "But being loved by the one you love is Everything... ",
-    "Happiness is getting a call or msg from our beloved ones.",
-    "One day it'll be happen,That day you'll be MINE.And I'll wait for that one day",
-    "You smile when you are happy...I smile when i saw that...!",
-    "NO one is not the Reason of my happiness EXCEPT you...",
-    "The happiest second of my life is...When i heard your sweet voice...Saying YES",
-    "I just want to LOVE you as much as your parents loves you...",
-    "Showing love is SAME...But persons are DIFFERENT...!",
-    "IF IT IS REAL...IT WILL NEVER END...❤"
-
-                   
-  ],
-  typeSpeed:50,
-  backSpeed:33,
-    });
-  
-  </script>
-
-<div class="wrapper">
-  <a href="pvp.html"  class="button btnSlide btnOrange">
-    <div class="top" data-content="Slide">Previous</div>
-    <div class="bottom" data-content="Slide">Click it</div>
+<a href="vishnu.html"  class="button btnSlide btnOrange">
+  <div class="top" data-content="Slide">more wishes</div>
+  <div class="bottom" data-content="Slide">Click it</div>
   </a>
 
-        
-      <div class="vishnu">
-        <a href="vishnu.html"  class="button btnSlide btnOrange">
-          <div class="top" data-content="Slide">Next</div>
-          <div class="bottom" data-content="Slide">Click it</div>
-        </a>
-      </div>
+<canvas id="canvas">
+</canvas>
+<div class="wrapper">
+  
+  <div data-text></div>
+  <span class="item"> Now I want to say something special to you.</span>
+  <p class="item"> So , Please read everything...</p>
+  <p class="item"> When I saw your pics for the first time Some special feeling that can't be Expressable...</p>
+  <p class="item"> As the days passed.. You getting very closer to my Heart...!</p>
+  <p class="item"> Everything about is always intresting for me...!</p>
+  <p class="item"> I hadn't said these words to anyone and I won't say to anyone in furture...  </p>
+  <p class="item"> Because I don't want anyone else...!    </p>
+  <p class="item"> I love my Parents so much than anything else in this world...    </p>
+  <p class="item"> Now You are the only PERSON whom I love equally with my parents...!    </p>
+  <p class="item"> Every one says love is blind     </p>
+  <p class="item"> But...If love has eyes..It definetly fall for YOU...!    </p>
+  <p class="item"> My heart is mine.    </p>
+  <p class="item"> But whenever I argue with it about YOU...It always supports your side.    </p>
+  <p class="item"> Loving is not important.    </p>
+  <p class="item"> But being loved by the one you love is Everything...    </p>
+  <p class="item"> Happiness is getting a call or msg from our beloved ones.    </p>
+  <p class="item"> One day it'll be happen,That day you'll be MINE.And I'll wait for that one day    </p>
+  <p class="item"> You smile when you are happy...I smile when i saw that...!    </p>
+  <p class="item"> NO one is not the Reason of my happiness EXCEPT you...    </p>
+  <p class="item"> The happiest second of my life is...When i heard your sweet voice...Saying YES    </p>
+  <p class="item"> I just want to LOVE you as much as your parents loves you...    </p>
+  <p class="item"> showing love is SAME...But persons are DIFFERENT...!    </p>
+  <p class="item"> IF IT IS REAL...IT WILL NEVER END...❤    </p>
+  
 
-
+  
+  
+ 
 </div>
 
-   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+<style>
+     a,
+a:visited {
+  text-decoration: none;
+  color: #00AE68;
+}
+.wrapper {
+  width: 600px;
+  margin: 200px auto;
+  margin-left:90%;
+  margin-bottom:85%;
+}
+a.button {
+  display:inline-block;
+  position: relative;
+  width: 120px;
+  padding: 0;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+.gif{
+	bottom: 50px;
+	right: 150px;
+	z-index: 0;
+}
+
+
+.btnSlide .top {
+  position: fixed;
+  
+  bottom: 50px;
+  right: 10px;
+  width: 130px;
+  height: 50px;
+  z-index: 10;
+  transition: all 0.2s ;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.btnSlide.btnOrange .top {
+    background: indianred;
+}
+.btnSlide .bottom {
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  width: 100px;
+  height: 50px;
+  color: darkgray;
+  z-index: 5;
+  border-radius: 100px;
+}
+
+.btnSlide:hover .top {
+  bottom: 40px;
+}
+
+  body {
+  background: #000;
+  margin: 0;
+
+}
+
+canvas {
+	cursor: crosshair;
+	display: block;
+}
+.wrapper {
+  padding: 10px;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  .item {
+    visibility: hidden;
+    display: none;
+    font-size: 23px;
+  }
+
+  h2 {
+    font-size: 50px;
+    margin: 0;
+    color: #3a3a3a;
+    text-align: left;
+  }
+
+  div {
+    min-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    font-size: 23px;
+    color: orange;
+  }
+    &:after {
+    content: "";
+    width: 10px;
+    height: 4px;
+    display: block;
+    background: black;
+    color: orange;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    animation-duration: 350ms;
+    animation-name: fade;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    }
+  
+
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+</style>
+
+<script>
+let wrapper
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms))
+
+async function writingAll (stringTarget, container){
+  wrapper = document.querySelector('['+container+']')
+  const stringsContainer = document.getElementsByClassName(stringTarget)
+     
+  while(wrapper){
+    for (i=0; i <  stringsContainer.length ; i++){
+      const string = stringsContainer[i].textContent
+      await write(string)
+      await sleep(1000)
+      await erase()
+      await sleep(1000)
+    };
+  }
+};
+
+async function write(text){    
+  let index = 0
+  while(index < text.length){
+    const timeout = 100
+    await sleep(timeout)
+    index++
+    wrapper.innerHTML = text.substring(0, index)
+  }
+};
+
+
+async function erase() {
+  while(wrapper.textContent.length){
+    const timeout = 50
+    await sleep(timeout)
+    wrapper.textContent = wrapper.textContent.substring(0, wrapper.textContent.length - 2)
+  }
+};
+
+writingAll('item', 'data-text');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
 <script>
-  $(window).on('load',function(){
-    $(".flex-container").fadeOut("slow");
-  });
+  // when animating on canvas, it is best to use requestAnimationFrame instead of setTimeout or setInterval
+// not supported in all browsers though and sometimes needs a prefix, so we need a shim
+window.requestAnimFrame = ( function() {
+	return window.requestAnimationFrame ||
+				window.webkitRequestAnimationFrame ||
+				window.mozRequestAnimationFrame ||
+				function( callback ) {
+					window.setTimeout( callback, 1000 / 60 );
+				};
+})();
+
+// now we will setup our basic variables for the demo
+var canvas = document.getElementById( 'canvas' ),
+		ctx = canvas.getContext( '2d' ),
+		// full screen dimensions
+		cw = window.innerWidth,
+		ch = window.innerHeight,
+		// firework collection
+		fireworks = [],
+		// particle collection
+		particles = [],
+		// starting hue
+		hue = 120,
+		// when launching fireworks with a click, too many get launched at once without a limiter, one launch per 5 loop ticks
+		limiterTotal = 5,
+		limiterTick = 0,
+		// this will time the auto launches of fireworks, one launch per 80 loop ticks
+		timerTotal = 80,
+		timerTick = 0,
+		mousedown = false,
+		// mouse x coordinate,
+		mx,
+		// mouse y coordinate
+		my;
+		
+// set canvas dimensions
+canvas.width = cw;
+canvas.height = ch;
+
+// now we are going to setup our function placeholders for the entire demo
+
+// get a random number within a range
+function random( min, max ) {
+	return Math.random() * ( max - min ) + min;
+}
+
+// calculate the distance between two points
+function calculateDistance( p1x, p1y, p2x, p2y ) {
+	var xDistance = p1x - p2x,
+			yDistance = p1y - p2y;
+	return Math.sqrt( Math.pow( xDistance, 2 ) + Math.pow( yDistance, 2 ) );
+}
+
+// create firework
+function Firework( sx, sy, tx, ty ) {
+	// actual coordinates
+	this.x = sx;
+	this.y = sy;
+	// starting coordinates
+	this.sx = sx;
+	this.sy = sy;
+	// target coordinates
+	this.tx = tx;
+	this.ty = ty;
+	// distance from starting point to target
+	this.distanceToTarget = calculateDistance( sx, sy, tx, ty );
+	this.distanceTraveled = 0;
+	// track the past coordinates of each firework to create a trail effect, increase the coordinate count to create more prominent trails
+	this.coordinates = [];
+	this.coordinateCount = 3;
+	// populate initial coordinate collection with the current coordinates
+	while( this.coordinateCount-- ) {
+		this.coordinates.push( [ this.x, this.y ] );
+	}
+	this.angle = Math.atan2( ty - sy, tx - sx );
+	this.speed = 2;
+	this.acceleration = 1.05;
+	this.brightness = random( 50, 70 );
+	// circle target indicator radius
+	this.targetRadius = 1;
+}
+
+// update firework
+Firework.prototype.update = function( index ) {
+	// remove last item in coordinates array
+	this.coordinates.pop();
+	// add current coordinates to the start of the array
+	this.coordinates.unshift( [ this.x, this.y ] );
+	
+	// cycle the circle target indicator radius
+	if( this.targetRadius < 8 ) {
+		this.targetRadius += 0.3;
+	} else {
+		this.targetRadius = 1;
+	}
+	
+	// speed up the firework
+	this.speed *= this.acceleration;
+	
+	// get the current velocities based on angle and speed
+	var vx = Math.cos( this.angle ) * this.speed,
+			vy = Math.sin( this.angle ) * this.speed;
+	// how far will the firework have traveled with velocities applied?
+	this.distanceTraveled = calculateDistance( this.sx, this.sy, this.x + vx, this.y + vy );
+	
+	// if the distance traveled, including velocities, is greater than the initial distance to the target, then the target has been reached
+	if( this.distanceTraveled >= this.distanceToTarget ) {
+		createParticles( this.tx, this.ty );
+		// remove the firework, use the index passed into the update function to determine which to remove
+		fireworks.splice( index, 1 );
+	} else {
+		// target not reached, keep traveling
+		this.x += vx;
+		this.y += vy;
+	}
+}
+
+// draw firework
+Firework.prototype.draw = function() {
+	ctx.beginPath();
+	// move to the last tracked coordinate in the set, then draw a line to the current x and y
+	ctx.moveTo( this.coordinates[ this.coordinates.length - 1][ 0 ], this.coordinates[ this.coordinates.length - 1][ 1 ] );
+	ctx.lineTo( this.x, this.y );
+	ctx.strokeStyle = 'hsl(' + hue + ', 100%, ' + this.brightness + '%)';
+	ctx.stroke();
+	
+	ctx.beginPath();
+	// draw the target for this firework with a pulsing circle
+	ctx.arc( this.tx, this.ty, this.targetRadius, 0, Math.PI * 2 );
+	ctx.stroke();
+}
+
+// create particle
+function Particle( x, y ) {
+	this.x = x;
+	this.y = y;
+	// track the past coordinates of each particle to create a trail effect, increase the coordinate count to create more prominent trails
+	this.coordinates = [];
+	this.coordinateCount = 5;
+	while( this.coordinateCount-- ) {
+		this.coordinates.push( [ this.x, this.y ] );
+	}
+	// set a random angle in all possible directions, in radians
+	this.angle = random( 0, Math.PI * 2 );
+	this.speed = random( 1, 10 );
+	// friction will slow the particle down
+	this.friction = 0.95;
+	// gravity will be applied and pull the particle down
+	this.gravity = 1;
+	// set the hue to a random number +-20 of the overall hue variable
+	this.hue = random( hue - 20, hue + 20 );
+	this.brightness = random( 50, 80 );
+	this.alpha = 1;
+	// set how fast the particle fades out
+	this.decay = random( 0.015, 0.03 );
+}
+
+// update particle
+Particle.prototype.update = function( index ) {
+	// remove last item in coordinates array
+	this.coordinates.pop();
+	// add current coordinates to the start of the array
+	this.coordinates.unshift( [ this.x, this.y ] );
+	// slow down the particle
+	this.speed *= this.friction;
+	// apply velocity
+	this.x += Math.cos( this.angle ) * this.speed;
+	this.y += Math.sin( this.angle ) * this.speed + this.gravity;
+	// fade out the particle
+	this.alpha -= this.decay;
+	
+	// remove the particle once the alpha is low enough, based on the passed in index
+	if( this.alpha <= this.decay ) {
+		particles.splice( index, 1 );
+	}
+}
+
+// draw particle
+Particle.prototype.draw = function() {
+	ctx. beginPath();
+	// move to the last tracked coordinates in the set, then draw a line to the current x and y
+	ctx.moveTo( this.coordinates[ this.coordinates.length - 1 ][ 0 ], this.coordinates[ this.coordinates.length - 1 ][ 1 ] );
+	ctx.lineTo( this.x, this.y );
+	ctx.strokeStyle = 'hsla(' + this.hue + ', 100%, ' + this.brightness + '%, ' + this.alpha + ')';
+	ctx.stroke();
+}
+
+// create particle group/explosion
+function createParticles( x, y ) {
+	// increase the particle count for a bigger explosion, beware of the canvas performance hit with the increased particles though
+	var particleCount = 30;
+	while( particleCount-- ) {
+		particles.push( new Particle( x, y ) );
+	}
+}
+
+// main demo loop
+function loop() {
+	// this function will run endlessly with requestAnimationFrame
+	requestAnimFrame( loop );
+	
+	// increase the hue to get different colored fireworks over time
+	hue += 0.5;
+	
+	// normally, clearRect() would be used to clear the canvas
+	// we want to create a trailing effect though
+	// setting the composite operation to destination-out will allow us to clear the canvas at a specific opacity, rather than wiping it entirely
+	ctx.globalCompositeOperation = 'destination-out';
+	// decrease the alpha property to create more prominent trails
+	ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+	ctx.fillRect( 0, 0, cw, ch );
+	// change the composite operation back to our main mode
+	// lighter creates bright highlight points as the fireworks and particles overlap each other
+	ctx.globalCompositeOperation = 'lighter';
+	
+	// loop over each firework, draw it, update it
+	var i = fireworks.length;
+	while( i-- ) {
+		fireworks[ i ].draw();
+		fireworks[ i ].update( i );
+	}
+	
+	// loop over each particle, draw it, update it
+	var i = particles.length;
+	while( i-- ) {
+		particles[ i ].draw();
+		particles[ i ].update( i );
+	}
+	
+	// launch fireworks automatically to random coordinates, when the mouse isn't down
+	if( timerTick >= timerTotal ) {
+		if( !mousedown ) {
+			// start the firework at the bottom middle of the screen, then set the random target coordinates, the random y coordinates will be set within the range of the top half of the screen
+			fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+			timerTick = 0;
+		}
+	} else {
+		timerTick++;
+	}
+	
+	// limit the rate at which fireworks get launched when mouse is down
+	if( limiterTick >= limiterTotal ) {
+		if( mousedown ) {
+			// start the firework at the bottom middle of the screen, then set the current mouse coordinates as the target
+			fireworks.push( new Firework( cw / 2, ch, mx, my ) );
+			limiterTick = 0;
+		}
+	} else {
+		limiterTick++;
+	}
+}
+
+// mouse event bindings
+// update the mouse coordinates on mousemove
+canvas.addEventListener( 'mousemove', function( e ) {
+	mx = e.pageX - canvas.offsetLeft;
+	my = e.pageY - canvas.offsetTop;
+});
+
+// toggle mousedown state and prevent canvas from being selected
+canvas.addEventListener( 'mousedown', function( e ) {
+	e.preventDefault();
+	mousedown = true;
+});
+
+canvas.addEventListener( 'mouseup', function( e ) {
+	e.preventDefault();
+	mousedown = false;
+});
+
+// once the window loads, we are ready for some fireworks!
+window.onload = loop;
+
+
+
 </script>
-
-
-</body>
-</html>
