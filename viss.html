@@ -4,21 +4,24 @@
   </a>
 
 <canvas id="canvas">
+				
+	
+	
 </canvas>
 <div class="wrapper">
   
   <div data-text></div>
   <span class="item"> Now I want to say something special to you.</span>
   <p class="item"> So , Please read everything...</p>
-  <p class="item"> When I saw your pics for the first time that special feeling can't be Expressable...</p>
-  <p class="item"> As the days passed.. You are getting very closer to my Heart...!</p>
+  <p class="item"> When I saw your pics for the first time Some special feeling that can't be Expressable...</p>
+  <p class="item"> As the days passed.. You getting very closer to my Heart...!</p>
   <p class="item"> Everything about is always intresting for me...!</p>
   <p class="item"> I hadn't said these words to anyone and I won't say to anyone in furture...  </p>
   <p class="item"> Because I don't want anyone else...!    </p>
   <p class="item"> I love my Parents so much than anything else in this world...    </p>
   <p class="item"> Now You are the only PERSON whom I love equally with my parents...!    </p>
   <p class="item"> Every one says love is blind     </p>
-  <p class="item"> But...If love has eyes..It will definitely fall for YOU...!    </p>
+  <p class="item"> But...If love has eyes..It definetly fall for YOU...!    </p>
   <p class="item"> My heart is mine.    </p>
   <p class="item"> But whenever I argue with it about YOU...It always supports your side.    </p>
   <p class="item"> Loving is not important.    </p>
@@ -26,7 +29,7 @@
   <p class="item"> Happiness is getting a call or msg from our beloved ones.    </p>
   <p class="item"> One day it'll be happen,That day you'll be MINE.And I'll wait for that one day    </p>
   <p class="item"> You smile when you are happy...I smile when i saw that...!    </p>
-  <p class="item"> NO one is the Reason of my happiness EXCEPT you...    </p>
+  <p class="item"> NO one is not the Reason of my happiness EXCEPT you...    </p>
   <p class="item"> The happiest second of my life is...When i heard your sweet voice...Saying YES    </p>
   <p class="item"> I just want to LOVE you as much as your parents loves you...    </p>
   <p class="item"> showing love is SAME...But persons are DIFFERENT...!    </p>
@@ -40,6 +43,14 @@
 
 
 <style>
+
+
+
+
+
+
+
+
      a,
 a:visited {
   text-decoration: none;
@@ -75,13 +86,13 @@ a.button {
 .btnSlide .top {
   position: fixed;
   
-  bottom: 50px;
+  bottom: 100px;
   right: 10px;
   width: 130px;
   height: 50px;
   z-index: 10;
   transition: all 0.2s ;
-  border-radius: 100px;
+  border-radius: 150px;
   text-align: center;
 }
 
@@ -138,12 +149,12 @@ canvas {
 
   div {
     min-height: 20px;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 1px;
     display: flex;
     align-items: flex-end;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 30px;
     color: orange;
   }
     &:after {
@@ -190,7 +201,7 @@ async function writingAll (stringTarget, container){
       const string = stringsContainer[i].textContent
       await write(string)
       await sleep(1000)
-      await erase()
+      
       await sleep(1000)
     };
   }
