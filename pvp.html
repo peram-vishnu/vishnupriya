@@ -3,9 +3,9 @@
 	<meta name="viewport" , content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-ua-compatible", content="ie=edge"/>
 </head>
-<body>
+<body background="viss.jpg">
 	<div id="loader">
-		<canvas id=c></canvas>
+		<canvas id=c style="background-image: url(viss.jpg);"></canvas>
 		<a href="viss.html"  class="button btnSlide btnOrange">
 			<div class="top" data-content="Slide">LOAD MORE</div>
 			<div class="bottom" data-content="Slide">Click it</div>
@@ -26,6 +26,7 @@
 
 <style>
 	canvas {
+		background-image:url("viss.jpg");
 	  position: absolute;
 	  top: 0;
 	  left: 0;
@@ -108,9 +109,9 @@ a.button {
 		hh = h / 2,
 		
 		opts = {
-			strings: [ 'HAPPY', 'BIRTHDAY!','vishnu♥️' ],
-			charSize: 30,
-			charSpacing: 35,
+			strings: [ 'HAPPY', 'BIRTHDAY.!','vishnu♥️' ],
+			charSize:30,
+			charSpacing: 30,
 			lineHeight: 40,
 			
 			cx: w / 2,
@@ -157,7 +158,7 @@ a.button {
 		
 		letters = [];
 
-ctx.font = opts.charSize + 'px Verdana';
+ctx.font = opts.charSize + 'px Comic Sans MS';
 
 
 
@@ -176,7 +177,7 @@ function Letter( char, x, y ){
 	this.color = 'hsl(hue,80%,50%)'.replace( 'hue', hue );
 	this.lightAlphaColor = 'hsla(hue,80%,light%,alp)'.replace( 'hue', hue );
 	this.lightColor = 'hsl(hue,80%,light%)'.replace( 'hue', hue );
-	this.alphaColor = 'hsla(hue,80%,50%,alp)'.replace( 'hue', hue );
+	this.alphaColor = 'hsla(hue,90%,50%,alp)'.replace( 'hue', hue );
 	
 	this.reset();
 }
@@ -464,7 +465,7 @@ function anim(){
 	
 	window.requestAnimationFrame( anim );
 	
-	ctx.fillStyle = '#111';
+	//ctx.fillStyle = '#111';
 	ctx.fillRect( 0, 0, w, h );
 	
 	ctx.translate( hw, hh );
